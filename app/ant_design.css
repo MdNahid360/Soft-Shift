@@ -1,0 +1,16 @@
+:where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header {
+    font-size: 36px;
+}
+
+.nav :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header {
+    padding: 0px!important;
+    color: white!important;
+}
+
+.nav :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse.ant-collapse-icon-position-end>.ant-collapse-item >.ant-collapse-header .ant-collapse-expand-icon {
+    margin-top: 23px!important;
+}
+
+.nav :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-arrow {
+    font-size: 32px!important;
+}
