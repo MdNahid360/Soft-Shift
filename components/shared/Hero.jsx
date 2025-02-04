@@ -1,4 +1,3 @@
-import React from 'react';
 import ContainerWrapper from './ContainerWrapper';
 const Hero = () => {
     return (
@@ -10,15 +9,15 @@ const Hero = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "fixed"
             }}
-            className='bg-[#020f12] flex items-center justify-center text-light md:min-h-[800px] py-12'>
+            className='bg-[#020f12] flex items-center justify-center text-light md:min-h-[800px] min-h-screen py-12 overflow-hidden'>
             <ContainerWrapper>
                 <div className="">
                     <div className="grid-cols-3">
                         <div className='text-center'>
                             <h4 className="text-lg">Were help </h4>
-                            <h1 className="mt-2 animate__animated animate__rubberBand lg:text-8xl md:text-5xl font-bold lg:w-auto md:w-[600px] m-auto ">Take your business to the next label</h1>
+                            <h1 className="mt-2 animate__animated animate__rubberBand lg:text-8xl md:text-5xl text-4xl font-bold lg:w-auto md:w-[600px] m-auto ">Take your business to the next label</h1>
 
-                            <p className="text-muted mt-8">
+                            <p className="text-muted mt-8 mx-auto lg:w-[800px] w-auto">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil totam, quam ab commodi architecto non. Illum quo suscipit repellendus voluptas. Magnam nisi, natus ab consequatur blanditiis aspernatur ratione. Architecto, doloribus!
                             </p>
                             <br />

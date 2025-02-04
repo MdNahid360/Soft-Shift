@@ -7,6 +7,21 @@
     color: white!important;
 }
 
+
+/********************************
+ * dropdown
+ ********************************/
+:where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu {
+    position: absolute!important;
+    margin-top: 10px!important;
+    z-index: 10000!important;
+}
+
+:where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu {
+    margin-top: 2px!important;
+    border-radius: 6px!important;
+}
+
 .nav :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse.ant-collapse-icon-position-end>.ant-collapse-item >.ant-collapse-header .ant-collapse-expand-icon {
     margin-top: 23px!important;
 }

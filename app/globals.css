@@ -4,6 +4,7 @@
 
 :root {
   --primary: #733DF3;
+  --dark_primary: #0a0617;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -16,6 +17,8 @@
 }
 
 body{
+  background-color: var(--dark_primary);
+  color: wheat;
      font-family: "Urbanist", serif;
 }
 
@@ -31,4 +34,51 @@ body{
               0 0 25px var(--primary),
               0 0 50px var(--primary),
               0 0 100px var(--primary);
+}
+
+
+/********************************
+ * why chose us
+ ********************************/
+.why-chose-us {
+/* background-image: radial-gradient(#5900ff8e 0.5px, #ffffff00 0.5px);
+background-size: 10px 10px; */
+background-image:  linear-gradient(#444df70d 1px, transparent 1px), linear-gradient(to right, #444df70b 1px, #e5e5f700 1px);
+background-size: 20px 20px;
+}
+
+@keyframes glowingShadow1 {
+  0% {
+    box-shadow: 18px -9px 235px 83px rgba(87, 8, 233, 0.508);
+  }
+  50% {
+    box-shadow: 18px -9px 250px 100px rgba(87, 8, 233, 0.701);
+  }
+  100% {
+    box-shadow: 18px -9px 235px 83px rgba(87, 8, 233, 0.401);
+  }
+}
+
+.shadow-shape-1 {
+  background-color: #5708e9b1;
+  box-shadow: 18px -9px 235px 83px rgba(87, 8, 233, 0.387);
+  animation: glowingShadow1 3s infinite ease-in-out;
+}
+
+@keyframes glowingShadow2 {
+  0% {
+    box-shadow: 18px -9px 235px 83px rgba(8, 158, 233, 0.508);
+  }
+  50% {
+    box-shadow: 18px -9px 250px 100px rgba(8, 124, 233, 0.701);
+  }
+  100% {
+    box-shadow: 18px -9px 235px 83px rgba(8, 136, 233, 0.401);
+  }
+}
+
+.shadow-shape-2 {
+  background-color: #085ae9b1;
+  box-shadow: 18px -9px 235px 83px rgba(8, 117, 233, 0.387);
+  animation: glowingShadow2 3s infinite ease-in-out;
 }
