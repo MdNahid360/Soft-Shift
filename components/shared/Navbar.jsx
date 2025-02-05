@@ -93,7 +93,7 @@ const Navbar = () => {
     );
 
     return (
-        <nav>
+        <nav className="navbar">
             <div className={`${isScrolled ? 'bg-gradient-to-r from-[#161123] to-[#1515409c] text-light fixed backdrop-blur duration-300'
                 : 'bg-transparent duration-300 absolute text-light'} border-gray-700 h-[80px] flex items-center left-0 right-0 top-0 w-full !z-[10000]`}>
                 <ContainerWrapper>
@@ -143,7 +143,7 @@ const Navbar = () => {
                 initial={{ opacity: 0, x: '100%' }}
                 animate={{ opacity: isMobileMenuOpen ? 1 : 0, x: isMobileMenuOpen ? 0 : '-100%' }}
                 transition={{ duration: 0.3 }}
-                className="fixed !h-screen border-[8px] border-[yellow] lg:hidden top-0 left-0 right-0 bottom-0 bg-primary p-4 !z-[10000]"
+                className="fixed !h-screen lg:hidden top-0 left-0 right-0 bottom-0 bg-primary p-4 !z-[10000]"
             >
 
                 {/* Mobile Navigation Items */}
