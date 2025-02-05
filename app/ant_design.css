@@ -1,4 +1,4 @@
-:where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header {
+.navbar :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header {
     font-size: 36px;
 }
 
@@ -28,4 +28,34 @@
 
 .nav :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-arrow {
     font-size: 32px!important;
+}
+
+
+/********************************
+ * services
+ ********************************/
+ .service :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header {
+    color : white!important;
+    border: none!important;
+    font-size: 20px!important;
+}
+
+.service :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse {
+    border: none!important;
+}
+
+.service :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse .ant-collapse-content {
+    background-color: transparent!important;
+    border-bottom: none!important;
+    color: gray!important;
+    border-color: #262d32!important;
+}
+
+.service :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item {
+    border-bottom: 1px solid #262d32!important;
+}
+
+.service :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item:last-child, :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item:last-child>.ant-collapse-header {
+    border-radius: 0!important;
+    border-bottom: none!important;
 }

@@ -2,6 +2,7 @@ export const serviceData = [
     {
         id: 1,
         name: "Web Development",
+        icon: "",
         description: "Web development is the process of creating and maintaining websites and web applications.",
         services: ['Custom Software', 'Web Application', 'Mobile Application'],
         howWeWork: [
@@ -22,6 +23,7 @@ export const serviceData = [
     {
         id: 2,
         name: "Cyber Security",
+        icon: "",
         description: "Cyber security involves protecting networks, systems, and data from cyber threats and attacks.",
         services: ['Network Security', 'Cloud Security', 'Penetration Testing'],
         howWeWork: [
@@ -41,6 +43,7 @@ export const serviceData = [
     {
         id: 3,
         name: "Data Analytics",
+        icon: "",
         description: "Data analytics involves analyzing data to gain insights and make informed business decisions.",
         services: ['Big Data Analytics', 'Predictive Analytics', 'Business Intelligence'],
         howWeWork: [
@@ -60,6 +63,7 @@ export const serviceData = [
     {
         id: 4,
         name: "Software Development",
+        icon: "",
         description: "Software development involves designing, building, and maintaining software applications for various industries.",
         services: ['Custom Software Development', 'Enterprise Software', 'SaaS Development'],
         howWeWork: [
