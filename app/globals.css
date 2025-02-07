@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
 :root {
   --primary: #733DF3;
@@ -18,11 +19,30 @@
 
 body{
   background-color: var(--dark_primary);
-  color: wheat;
+  color: white;
      font-family: "Urbanist", serif;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(61, 60, 60, 0.562); 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7300ff; 
+}
 
 .shadow__btn {
   background: #733DF3;
@@ -111,4 +131,219 @@ background-size: 20px 20px;
     box-shadow: 0px 0px 200px 60px #0e48c728;
   /* box-shadow: 18px -9px 235px 83px #520ec7b1; */
   animation: glowingShadow3 3s infinite ease-in-out;
+}
+
+/********************************
+ * footer
+ ********************************/
+.footer-shadow-shape {
+  opacity: 0.8!important;
+  background-color: #0e48c728;
+    box-shadow: 0px 0px 200px 90px #1a81f0b0;
+  /* box-shadow: 18px -9px 235px 83px #520ec7b1; */
+  /* animation: glowingShadow3 3s infinite ease-in-out; */
+}
+
+
+
+/********************************
+ * contact
+ ********************************/
+.Toastify__toast-container {
+    z-index: 10000!important;
+}
+
+.Toastify__toast--success {
+    background-color: #ffffff!important; 
+    color: rgb(0, 0, 0)!important;  
+    box-shadow: 0px 3px 12 1 rgb(255, 255, 255)!important;
+    border-radius: 8px; 
+    padding: 16px;  
+    font-size: 16px;
+}
+ 
+
+/********************************
+ * Description or Comment
+ ********************************/
+ .seaside {
+   -webkit-text-stroke: 2.5px #d9e6ee17;
+  -webkit-text-fill-color: #e1cdc300;  
+}
+
+
+
+/********************************
+ * Not Found Page
+ ********************************/
+
+.notfound-body {
+  box-sizing: border-box;
+  height: 100%;
+  background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Inconsolata', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: rgba(128, 255, 128, 0.8);
+  text-shadow:
+      0 0 1ex rgba(51, 255, 51, 1),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.noise {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: .02;
+}
+
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+      repeating-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background-size: auto 4px;
+  z-index: 1;
+}
+
+.overlay::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      0deg,
+      transparent 0%,
+      rgba(32, 128, 32, 0.2) 2%,
+      rgba(32, 128, 32, 0.8) 3%,
+      rgba(32, 128, 32, 0.2) 3%,
+      transparent 100%);
+  background-repeat: no-repeat;
+  animation: scan 7.5s linear 0s infinite;
+}
+
+@keyframes scan {
+  0%        { background-position: 0 -100vh; }
+  35%, 100% { background-position: 0 100vh; }
+}
+
+.terminal {
+  box-sizing: inherit;
+  position: absolute;
+  height: 100%;
+  width: 1000px;
+  max-width: 100%;
+  padding: 4rem;
+  text-transform: uppercase;
+}
+
+.output {
+  color: rgba(128, 255, 128, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.output::before {
+  content: "> ";
+}
+
+/*
+.input {
+  color: rgba(192, 255, 192, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.input::before {
+  content: "$ ";
+}
+*/
+ 
+
+.notfound-body .link::before {
+  content: "[";
+}
+
+.notfound-body .link::after {
+  content: "]";
+}
+
+.errorcode {
+  color: white;
+}
+
+/********************************
+ * achievement page
+ ********************************/
+ .story-bg {
+background-image:  radial-gradient(#444df746 0.5px, transparent 0.5px), radial-gradient(#444df721 0.5px, #00000000 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
+ }
+
+
+ /********************************
+  * team page
+  ********************************/
+  .team-bg {
+background-image:  linear-gradient(#444df70d 1px, transparent 1px), linear-gradient(to right, #444df70b 1px, #e5e5f700 1px);
+background-size: 20px 20px;
+  }
+  .team-card{
+    transition: all 0.45s;
+    border-radius: 500px 500px 10px 10px;
+   }
+   
+   .team-card:hover {
+    transition: all 0.45s;
+    border-radius: 4px;
+   }
+
+   .team-img {
+      transition: all 0.45s;
+    border-radius: 500px 500px 10px 10px;
+   }
+
+  .team-card:hover .team-img {
+    transition: all 0.45s;
+    border-radius: 4px;
+   }
+
+   @keyframes glowingShadowTeam {
+  0% {
+    box-shadow: 18px -9px 235px 83px rgba(8, 136, 233, 0.108);
+  }
+  50% {
+    box-shadow: 18px -9px 250px 100px rgba(8, 124, 233, 0.351);
+  }
+  100% {
+    box-shadow: 18px -9px 235px 23px rgba(8, 136, 233, 0.108);
+  }
+}
+
+.shadow-team {
+  opacity: 0.5!important;
+  background-color: #085ae9b1;
+  box-shadow: 18px -9px 235px 63px rgba(8, 136, 233, 0.375);
+  animation: glowingShadowTeam 3s infinite ease-in-out;
 }

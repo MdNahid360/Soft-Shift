@@ -20,14 +20,36 @@
 :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu {
     margin-top: 2px!important;
     border-radius: 6px!important;
+    min-width: 130px!important;
+    background-color: #292444e5!important;
+    backdrop-filter: blur(70px)!important;
+    color: white!important;
 }
 
 .nav :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse.ant-collapse-icon-position-end>.ant-collapse-item >.ant-collapse-header .ant-collapse-expand-icon {
     margin-top: 23px!important;
+    padding: 0!important;
 }
 
 .nav :where(.css-dev-only-do-not-override-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-arrow {
     font-size: 32px!important;
+}
+
+
+:where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-item, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-submenu-title {
+    color: white!important;
+    padding: 0!important;
+    width: 100%!important;
+}
+
+:where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-item, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-submenu-title:hover {
+    color: rgb(176, 176, 247)!important;
+}
+
+
+:where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-item, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-submenu-title {
+    padding: 2px 0px!important;
+    width: 100%!important;
 }
 
 
