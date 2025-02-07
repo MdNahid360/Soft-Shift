@@ -35,33 +35,22 @@ const Navbar = () => {
     const navItems = [
         {
             name: "Home",
-            href: "#",
+            href: "/",
             isDropdown: false
-        },
-        {
-            name: "Pages",
-            href: "/pages",
-            isDropdown: true,
-            menu: [
-                { name: "Web Development", href: "#" },
-                { name: "App Development", href: "#" },
-                { name: "UI/UX Design", href: "#" },
-            ]
         },
         {
             name: "About",
-            href: "/about",
-            isDropdown: false
+            href: "/",
+            isDropdown: true,
+            menu: [
+                { name: "Our Story", href: "our-story" },
+                { name: "Our team", href: "team" },
+            ]
         },
         {
             name: "Portfolio",
             href: "/portfolio",
             isDropdown: false,
-        },
-        {
-            name: "Showcase",
-            href: "/showcase",
-            isDropdown: false
         },
         {
             name: "Blog",
@@ -71,6 +60,11 @@ const Navbar = () => {
         {
             name: "Contact Us",
             href: "/contact",
+            isDropdown: false
+        },
+        {
+            name: "Careers",
+            href: "/careers",
             isDropdown: false
         },
 
@@ -83,8 +77,10 @@ const Navbar = () => {
                     key={item.name}>
                     <motion.div
                         whileHover={{ x: 0 }}>
-                        <Link href={item.href} className="p-2 hover:text-dark  transition duration-300">
-                            {item.name}
+                        <Link href={item.href}>
+                            <div className="px-2 py-1 !text-white  text-start transition duration-300">
+                                {item.name}
+                            </div>
                         </Link>
                     </motion.div>
                 </Menu.Item>
@@ -98,7 +94,7 @@ const Navbar = () => {
                 : 'bg-transparent duration-300 absolute text-light'} border-gray-700 h-[80px] flex items-center left-0 right-0 top-0 w-full !z-[10000]`}>
                 <ContainerWrapper>
                     <div className="flex items-center justify-between">
-                        <div className="logo">
+                        <Link href="/" className="logo">
                             <Image
                                 src="/assets/logo.png"
                                 width={500}
@@ -106,7 +102,7 @@ const Navbar = () => {
                                 alt="logo"
                                 className="md:w-[170px] w-[120px]"
                             />
-                        </div>
+                        </Link>
                         <button className="lg:hidden block" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                             <AlignJustify className="text-light" strokeWidth={1} size={30} />
                         </button>

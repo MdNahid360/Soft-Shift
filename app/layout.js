@@ -1,10 +1,7 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "./ant_design.css";
-import Navbar from "@/components/shared/Navbar";
+import { ToastContainer } from "react-toastify";
 
-// Import the Inter font (if needed for other parts of the project)
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Soft Shift",
@@ -25,8 +22,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Navbar />
         {children}
+        <ToastContainer />
       </body>
     </html>
   );
