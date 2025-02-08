@@ -1,82 +1,11 @@
+import Contact from "@/components/Contact";
 import ContainerWrapper from "@/components/shared/ContainerWrapper";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { projects } from "@/data/projects";
+import { ArrowLeft, ArrowRight, Eye } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProjectPage = ({ params: { id } }) => {
-    const projects = [
-        {
-            id: 1,
-            imageHref: "https://i.ibb.co/64WfFPt/image-01.jpg",
-            category: "branding",
-            title: "Creative Agency asdfas asdf asdfasdf sdafasdfasdf asdf asd fasd fasd fasdf asfasd",
-            button: "View Details",
-            buttonHref: "#",
-            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
-            technology: ["react", "nextjs", "tailwindcss", "typescript"],
-            startDate: "2025-01-01",
-            endDate: "2025-03-14"
-        },
-        {
-            id: 2,
-            imageHref: "https://i.ibb.co/PT7ghRs/image-06.jpg",
-            category: "marketing",
-            title: "Creative Agency",
-            button: "View Details",
-            buttonHref: "#",
-            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
-            technology: ["react", "nextjs", "tailwindcss", "typescript"],
-            startDate: "2023-01-01",
-            endDate: "2025-01-01"
-        },
-        {
-            id: 3,
-            imageHref: "https://i.ibb.co/vkt8C1P/image-02.jpg",
-            category: "marketing",
-            title: "Creative Agency",
-            button: "View Details",
-            buttonHref: "#",
-            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
-            technology: ["react", "nextjs", "tailwindcss", "typescript"],
-            startDate: "2023-01-01",
-            endDate: "2025-01-01"
-        },
-        {
-            id: 4,
-            imageHref: "https://i.ibb.co/3FKqS1G/image-03.jpg",
-            category: "development",
-            title: "Creative Agency",
-            button: "View Details",
-            buttonHref: "#",
-            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
-            technology: ["react", "nextjs", "tailwindcss", "typescript"],
-            startDate: "2023-01-01",
-            endDate: "2025-01-01"
-        },
-        {
-            id: 5,
-            imageHref: "https://i.ibb.co/m6dq2fX/image-04.jpg",
-            category: "design",
-            title: "Creative Agency",
-            button: "View Details",
-            buttonHref: "#",
-            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
-            technology: ["react", "nextjs", "tailwindcss", "typescript"],
-            startDate: "2023-01-01",
-            endDate: "2025-01-01"
-        },
-        {
-            id: 6,
-            imageHref: "https://i.ibb.co/mCPjBsH/image-05.jpg",
-            category: "marketing",
-            title: "Creative Agency",
-            button: "View Details",
-            buttonHref: "#",
-            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
-            technology: ["react", "nextjs", "tailwindcss", "typescript"],
-            startDate: "2023-01-01",
-            endDate: "2025-01-01"
-        }
-    ];
 
     const findProject = projects.find((project) => project.id === parseInt(id));
 
@@ -106,6 +35,8 @@ const ProjectPage = ({ params: { id } }) => {
         const year = date.getFullYear();
         return `${day} ${month} ${year}`;
     }
+
+    console.log(findProject);
     return (
         <div className="text-white">
             <header
@@ -124,13 +55,21 @@ const ProjectPage = ({ params: { id } }) => {
                 <ContainerWrapper>
                     <div className="grid md:grid-cols-2 md:gap-12 gap-4">
 
-                        <div className="">
+                        <div className="group relative rounded-xl overflow-hidden md:h-[500px] h-[300px]">
                             <Image
                                 src={findProject?.imageHref}
                                 alt={findProject?.title}
                                 width={500}
                                 height={500}
-                                className="w-full border rounded-xl border-gray-700 md:h-[500px] h-[300px] object-cover" />
+                                className="w-full border duration-300 rounded-xl border-gray-700 h-full object-cover" />
+                            
+                            <div className="absolute opacity-0 group-hover:opacity-100 duration-300 top-0 left-0 right-0 bottom-0 backdrop-blur-sm bg-[#00000060] flex items-center justify-center">
+                                 <a
+                                target="_blank"
+                                className="px-2 cursor-pointer hover:bg-primary py-1 duration-300 w-[110px] text-sm border backdrop-blur-lg rounded-full flex items-center gap-2 justify-center border-primary mt-2 text-light" href={findProject?.url}>
+                                <Eye strokeWidth={1} /> Preview
+                            </a>
+                            </div>
                         </div>
                         <div className="md:col-span-1">
                             <h1 className="text-3xl font-bold">{findProject?.title.slice(0, 73)} {findProject?.title.length > 73 ? "..." : ""} </h1>
@@ -168,6 +107,9 @@ const ProjectPage = ({ params: { id } }) => {
                     </div>
                 </ContainerWrapper>
             </figure>
+
+            <br /><br /><br />
+            <Contact />
         </div>
     );
 };

@@ -7,11 +7,12 @@ import Link from "next/link";
 import { Collapse, Dropdown, Menu } from "antd";
 import { AlignJustify, ChevronDown, X } from "lucide-react";
 import ContainerWrapper from "./ContainerWrapper";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-
+    const pathname = usePathname();
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === "Escape") {
@@ -20,7 +21,8 @@ const Navbar = () => {
         };
 
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 800);
+            const scrollThreshold = pathname === "/" ? 800 : 100; // Check the route and set threshold
+            setIsScrolled(window.scrollY > scrollThreshold);
         };
 
         window.addEventListener("keydown", handleKeyDown);
@@ -30,7 +32,7 @@ const Navbar = () => {
             window.removeEventListener("keydown", handleKeyDown);
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [pathname]);
 
     const navItems = [
         {
@@ -43,8 +45,8 @@ const Navbar = () => {
             href: "/",
             isDropdown: true,
             menu: [
-                { name: "Our Story", href: "our-story" },
-                { name: "Our team", href: "team" },
+                { name: "Our Story", href: "/our-story" },
+                { name: "Our team", href: "/team" },
             ]
         },
         {
@@ -59,7 +61,7 @@ const Navbar = () => {
         },
         {
             name: "Contact Us",
-            href: "/contact",
+            href: "/#contact",
             isDropdown: false
         },
         {
@@ -70,15 +72,36 @@ const Navbar = () => {
 
     ];
 
+    // const renderDropdownMenu = (menuItems) => (
+    //     <Menu className="!mt-3 !p-2">
+    //         {menuItems.map((item) => (
+    //             <Menu.Item
+    //                 key={item.name}>
+    //                 <motion.div
+    //                     whileHover={{ x: 0 }}>
+    //                     <Link
+    //                         href={item.href}
+    //                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+    //                         className={`text-light transition duration-300 ${pathname === item.href ? "text-primary" : ""}`}
+    //                     >
+    //                         {item.name}
+    //                     </Link>
+
+    //                 </motion.div>
+    //             </Menu.Item>
+    //         ))}
+    //     </Menu>
+    // );
+
     const renderDropdownMenu = (menuItems) => (
         <Menu className="!mt-3 !p-2">
             {menuItems.map((item) => (
-                <Menu.Item
-                    key={item.name}>
-                    <motion.div
-                        whileHover={{ x: 0 }}>
+                <Menu.Item key={item.name}>
+                    <motion.div whileHover={{ x: 0 }}>
                         <Link href={item.href}>
-                            <div className="px-2 py-1 !text-white  text-start transition duration-300">
+                            <div className={`px-2 py-1 text-start transition duration-300 
+                            ${pathname === item.href ? "text-light_primary" : "text-white"}`}
+                            >
                                 {item.name}
                             </div>
                         </Link>
@@ -88,19 +111,20 @@ const Navbar = () => {
         </Menu>
     );
 
+
     return (
         <nav className="navbar">
-            <div className={`${isScrolled ? 'bg-gradient-to-r from-[#161123] to-[#1515409c] text-light fixed backdrop-blur duration-300'
+            <div className={`${isScrolled ? 'bg-gradient-to-r from-[#161123]  to-[#1515409c] text-light fixed backdrop-blur duration-300'
                 : 'bg-transparent duration-300 absolute text-light'} border-gray-700 h-[80px] flex items-center left-0 right-0 top-0 w-full !z-[10000]`}>
                 <ContainerWrapper>
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between ">
                         <Link href="/" className="logo">
                             <Image
                                 src="/assets/logo.png"
                                 width={500}
                                 height={500}
                                 alt="logo"
-                                className="md:w-[170px] w-[120px]"
+                                className="md:w-[170px] w-[120px] h-[40px]"
                             />
                         </Link>
                         <button className="lg:hidden block" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -114,19 +138,22 @@ const Navbar = () => {
                                         <motion.div>
                                             <Link
                                                 href={item.href}
-                                                className="hover:text-muted  transition duration-300"
+                                                className={`hover:text-muted transition duration-300 ${pathname === item.href ? "text-light_primary font-bold" : "text-light"}`}
                                             >
                                                 {item.name}
                                             </Link>
+
                                         </motion.div>
                                     ) : (
-                                        <Dropdown className="!h-[44px]" overlay={renderDropdownMenu(item.menu)} trigger={['hover']}>
+                                        <Dropdown overlay={renderDropdownMenu(item.menu)} trigger={["hover"]}>
                                             <motion.button
-                                                className="flex items-center gap-1 hover:text-muted  transition duration-300"
+                                                className={`flex items-center gap-1 hover:text-muted transition duration-300 
+            ${item.menu.some(subItem => pathname === subItem.href) ? "text-light_primary font-bold" : "text-light"}`}
                                             >
                                                 {item.name} <ChevronDown strokeWidth={1.5} />
                                             </motion.button>
                                         </Dropdown>
+
                                     )}
                                 </div>
                             ))}
@@ -142,7 +169,7 @@ const Navbar = () => {
                 className="fixed !h-screen lg:hidden top-0 left-0 right-0 bottom-0 bg-primary p-4 !z-[10000]"
             >
 
-                {/* Mobile Navigation Items */}
+
                 <div className="flex flex-col nav text-4xl space-y-4 relative z-[10000]">
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -154,8 +181,11 @@ const Navbar = () => {
                             {!item.isDropdown ? (
                                 <motion.div
                                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                                    whileHover={{ x: 3, }}>
-                                    <Link href={item.href} className="text-light transition duration-300">
+                                    whileHover={{ x: 3 }}>
+                                    <Link
+                                        href={item.href}
+                                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                                        className={`text-light transition duration-300 ${pathname === item.href ? "text-dark" : ""}`}>
                                         {item.name}
                                     </Link>
                                 </motion.div>
@@ -166,11 +196,10 @@ const Navbar = () => {
                                             {item.menu.map((subItem) => (
                                                 <motion.div
                                                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                                                    key={subItem.name} whileHover={{ x: 3, }}>
+                                                    key={subItem.name} whileHover={{ x: 3 }}>
                                                     <Link
                                                         href={subItem.href}
-                                                        className="pl-4 text-2xl text-light transition duration-300"
-                                                    >
+                                                        className={`pl-4 text-2xl text-light transition duration-300 ${pathname === subItem.href ? "text-dark" : ""}`}>
                                                         {subItem.name}
                                                     </Link>
                                                 </motion.div>
@@ -182,6 +211,7 @@ const Navbar = () => {
                         </div>
                     ))}
                 </div>
+
 
                 {/* Zoom-in Menu Text */}
                 <div className="h-full absolute top-0 left-0 bottom-0 right-0 flex flex-col justify-center items-end">

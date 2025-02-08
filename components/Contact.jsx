@@ -31,7 +31,7 @@ const Contact = () => {
         },
     ];
     return (
-        <section className="mb-32">
+        <section id="contact" className="mb-32">
             <div
                 data-aos="fade-up"
                 id="map"

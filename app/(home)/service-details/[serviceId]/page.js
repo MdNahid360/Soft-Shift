@@ -1,4 +1,5 @@
 'use client';
+import Contact from "@/components/Contact";
 import HowWeWorks from "@/components/services/HowWeWorks";
 import ServiceQan from "@/components/services/ServiceQan";
 import ContainerWrapper from "@/components/shared/ContainerWrapper";
@@ -83,6 +84,10 @@ const ServiceDetailsPage = ({ params: { serviceId } }) => {
                     </div>
                 </ContainerWrapper>
             </figure>
+
+            <br /><br /><br />
+
+            <Contact />
         </div>
     );
 };

@@ -81,3 +81,12 @@
     border-radius: 0!important;
     border-bottom: none!important;
 }
+
+ 
+
+.common-header :where(.css-dev-only-do-not-override-cdzvx5).ant-breadcrumb .ant-breadcrumb-separator {
+    color: rgb(113, 196, 240)!important;
+    font-size: 20px!important;
+    margin: auto!important;
+    padding: 0px 8px!important;
+}
