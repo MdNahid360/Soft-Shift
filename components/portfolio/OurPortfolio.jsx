@@ -97,6 +97,7 @@ const OurPortfolio = ({ title, subtitle, allProject = false, description, projec
                                     button={project?.button}
                                     buttonHref={project?.buttonHref}
                                     showCard={showCard}
+                                    url={project?.url}
                                 />
                             ))
                         )}

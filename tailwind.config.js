@@ -16,7 +16,10 @@ module.exports = {
   			light: '#fff',
   			dark: '#000',
   			muted: '#c1bebe',
-  		}
+		  },
+			 fontFamily: {
+        urbanist: ["Urbanist", "sans-serif"],
+      },
   	}
   },
   plugins: [require("tailwindcss-animate")],

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PortfolioCard = ({
-    id,
+    id = 0,
     showCard,
     url,
     category,
@@ -34,10 +34,12 @@ const PortfolioCard = ({
                             <Link href={`/project/${id}`}>
                                 <h1 className="text-2xl duration-300 hover:text-primary mb-3 font-bold">{title}</h1>
                             </Link>
-                            <a
-                                className="px-2 cursor-pointer hover:bg-primary py-1 duration-300 w-[110px] text-sm border backdrop-blur-lg rounded-full flex items-center gap-2 justify-center border-primary mt-2 text-light" href={url}>
+                            <Link
+                                href={`${url}`}
+                                target="_blank"
+                                className="px-2 cursor-pointer hover:bg-primary py-1 duration-300 w-[110px] text-sm border backdrop-blur-lg rounded-full flex items-center gap-2 justify-center border-primary mt-2 text-light">
                                 <Eye strokeWidth={1} /> Preview
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

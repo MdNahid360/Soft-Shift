@@ -1,4 +1,5 @@
 import Contact from '@/components/Contact';
+import CommonHeader from '@/components/shared/CommonHeader';
 import ContainerWrapper from '@/components/shared/ContainerWrapper';
 import Title from '@/components/shared/Title';
 import TeamCard from '@/components/TeamCard';
@@ -101,17 +102,7 @@ const TeamPage = () => {
     ];
     return (
         <div className='team-bg relative'>
-             <header
-                style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/team.jpg")`,
-                }}
-                className="bg-fixed bg-center bg-cover md:h-[500px] h-[360px] overflow-hidden flex items-center justify-center">
-                <ContainerWrapper>
-                    <h1 className="lg:text-6xl md:text-5xl text-3xl lg:w-[900px] md:w-[650px] w-auto m-auto text-center font-bold animate__animated animate__rubberBand">
-                       Meet Our Team Members
-                    </h1>
-                </ContainerWrapper>
-            </header>
+            <CommonHeader title="Meet Our Team Members" banner="/assets/team.jpg" />
 
             <figure className='py-12'>
                 <ContainerWrapper>

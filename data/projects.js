@@ -1,0 +1,80 @@
+export  const projects = [
+        {
+            id: 1,
+            imageHref: "https://i.ibb.co/64WfFPt/image-01.jpg",
+            category: "branding",
+            title: "Creative Agency asdfas asdf asdfasdf sdafasdfasdf asdf asd fasd fasd fasdf asfasd",
+            button: "View Details",
+            buttonHref: "#",
+            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
+            technology: ["react", "nextjs", "tailwindcss", "typescript"],
+            startDate: "2025-01-01",
+            endDate: "2025-03-14",
+            url: "https://www.google.com"
+        },
+        {
+            id: 2,
+            imageHref: "https://i.ibb.co/PT7ghRs/image-06.jpg",
+            category: "marketing",
+            title: "Creative Agency",
+            button: "View Details",
+            buttonHref: "#",
+            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
+            technology: ["react", "nextjs", "tailwindcss", "typescript"],
+            startDate: "2023-01-01",
+            endDate: "2025-01-01",
+            url: "https://www.google.com"
+        },
+        {
+            id: 3,
+            imageHref: "https://i.ibb.co/vkt8C1P/image-02.jpg",
+            category: "marketing",
+            title: "Creative Agency",
+            button: "View Details",
+            buttonHref: "#",
+            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
+            technology: ["react", "nextjs", "tailwindcss", "typescript"],
+            startDate: "2023-01-01",
+            endDate: "2025-01-01",
+            url: "https://www.google.com"
+        },
+        {
+            id: 4,
+            imageHref: "https://i.ibb.co/3FKqS1G/image-03.jpg",
+            category: "development",
+            title: "Creative Agency",
+            button: "View Details",
+            buttonHref: "#",
+            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
+            technology: ["react", "nextjs", "tailwindcss", "typescript"],
+            startDate: "2023-01-01",
+            endDate: "2025-01-01",
+            url: "https://www.google.com"
+        },
+        {
+            id: 5,
+            imageHref: "https://i.ibb.co/m6dq2fX/image-04.jpg",
+            category: "design",
+            title: "Creative Agency",
+            button: "View Details",
+            buttonHref: "#",
+            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
+            technology: ["react", "nextjs", "tailwindcss", "typescript"],
+            startDate: "2023-01-01",
+            endDate: "2025-01-01",
+            url: "https://www.google.com"
+        },
+        {
+            id: 6,
+            imageHref: "https://i.ibb.co/mCPjBsH/image-05.jpg",
+            category: "marketing",
+            title: "Creative Agency",
+            button: "View Details",
+            buttonHref: "#",
+            details: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, voluptatibus veritatis officia in esse totam unde maxime cum nisi libero. Ex illo voluptatibus alias quas tenetur tempore nisi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deleniti amet eaque dignissimos exercitationem nobis ipsam blanditiis pariatur ad, vero illum doloribus deserunt nihil quasi repudiandae illo omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis in, fugiat laboriosam asperiores recusandae qui sunt iusto eaque eligendi veritatis dicta minus, repellendus omnis unde ut nostrum repellat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident natus perferendis molestias! Dolores ex iste distinctio suscipit, quis recusandae, quibusdam earum tenetur laudantium delectus beatae molestiae animi aliquid exercitationem!",
+            technology: ["react", "nextjs", "tailwindcss", "typescript"],
+            startDate: "2023-01-01",
+            endDate: "2025-01-01",
+            url: "https://www.google.com"
+        }
+    ];
