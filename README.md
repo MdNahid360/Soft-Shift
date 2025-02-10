@@ -24,11 +24,16 @@ Soft Shift is a fully dynamic software agency website built with Next.js and Ema
 ## Project Structure
 ```
 /soft-shift
-│── /components       # Reusable React components
-│── /page            # Next.js app (Home, About, Portfolio, Services, Contact, Career)
+====================================================================================
+│── /components      # Reusable React components
+│── /app             # Next.js app (Home, About, Portfolio, Services, Contact, Career)
 │── /public          # Static assets (images, icons, etc.)
+│── /components      # All components
+│── /lib             # All library files
+│── hooks            # Custom hooks
 │── next.config.js   # Next.js configuration
 │── package.json     # Dependencies and scripts
+│── .env             # Environment variables
 ```
 
 ## Installation
