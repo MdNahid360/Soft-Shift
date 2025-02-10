@@ -94,7 +94,7 @@ const Navbar = () => {
     // );
 
     const renderDropdownMenu = (menuItems) => (
-        <Menu className="!mt-3 !bg-[#292444e5] !min-w-[140px] !rounded-md !relative !p-2 !z-[10000]">
+        <Menu className="!mt-3 !bg-[#292444] !min-w-[140px] !rounded-md !relative !p-2 !z-[10000]">
             {menuItems.map((item) => (
                 <Menu.Item key={item.name}>
                     <motion.div whileHover={{ x: 0 }}>
@@ -146,7 +146,7 @@ const Navbar = () => {
                                         </motion.div>
                                     ) : (
                                         <Dropdown
-                                            overlay={renderDropdownMenu(item.menu)} trigger={["click"]}
+                                            overlay={renderDropdownMenu(item.menu)} trigger={["hover"]}
                                             className="custom-dropdown"
                                         >
                                             <motion.button
