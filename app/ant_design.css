@@ -17,7 +17,15 @@
     z-index: 10000!important;
 }
 
-:where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu {
+/* :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu {
+    margin-top: 2px!important;
+    border-radius: 6px!important;
+    min-width: 130px!important;
+    background-color: #292444e5!important;
+    backdrop-filter: blur(70px)!important;
+    color: white!important;
+} */
+.nav .ant-dropdown-menu {
     margin-top: 2px!important;
     border-radius: 6px!important;
     min-width: 130px!important;

@@ -94,7 +94,7 @@ const Navbar = () => {
     // );
 
     const renderDropdownMenu = (menuItems) => (
-        <Menu className="!mt-3 !p-2">
+        <Menu className="!mt-3 !bg-[#292444e5] !min-w-[140px] !rounded-md !p-2">
             {menuItems.map((item) => (
                 <Menu.Item key={item.name}>
                     <motion.div whileHover={{ x: 0 }}>
@@ -115,7 +115,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className={`${isScrolled ? 'bg-gradient-to-r from-[#161123]  to-[#1515409c] text-light fixed backdrop-blur duration-300'
-                : 'bg-transparent duration-300 absolute text-light'} border-gray-700 h-[80px] flex items-center left-0 right-0 top-0 w-full !z-[10000]`}>
+                : 'bg-transparent duration-300 absolute text-light'} border-gray-700 h-[80px] flex items-center left-0 right-0 top-0 w-full nav !z-[10000]`}>
                 <ContainerWrapper>
                     <div className="flex items-center justify-between ">
                         <Link href="/" className="logo">
@@ -145,7 +145,10 @@ const Navbar = () => {
 
                                         </motion.div>
                                     ) : (
-                                        <Dropdown overlay={renderDropdownMenu(item.menu)} trigger={["hover"]}>
+                                        <Dropdown
+                                            overlay={renderDropdownMenu(item.menu)} trigger={["hover"]}
+                                            className="custom-dropdown"
+                                        >
                                             <motion.button
                                                 className={`flex items-center gap-1 hover:text-muted transition duration-300 
             ${item.menu.some(subItem => pathname === subItem.href) ? "text-light_primary font-bold" : "text-light"}`}

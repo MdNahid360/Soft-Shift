@@ -1,13 +1,14 @@
 export const jobData = [
-        {
+        {id: '1',
             title: "UI/UX Designer",
             category: "UI/UX Design",
             company: "EchoaSoft",
+            jobId: "125432",
             location: "Nikunja-2, Dhaka",
             salary: "Tk. 35,000-45,000 per month",
             type: "Permanent, Full-time",
             postedDaysAgo: 8,
-            applyDuration: "Apply before 15th Feb 2025",
+            applyDuration: "01-01-2025 ",
             skills: [
                 "Research",
                 "Architecture",
@@ -43,7 +44,7 @@ export const jobData = [
                 "Partially subsidized lunch facilities",
             ],
         },
-        {
+        {id: '2',
             title: "Front-End Developer",
             category: "Web Development",
             company: "Bright Future Soft",
@@ -51,7 +52,8 @@ export const jobData = [
             salary: "Tk. 45,000-55,000 per month",
             type: "Permanent, Full-time",
             postedDaysAgo: 5,
-            applyDuration: "Apply before 20th Feb 2025",
+            jobId: "125432",
+            applyDuration: "01-01-2025 ",
             skills: ["HTML", "CSS", "JavaScript", "React.js", "Next.js", "Redux", "Tailwind CSS"],
             responsibilities: [
                 "Develop responsive and interactive web applications.",
@@ -76,15 +78,16 @@ export const jobData = [
                 "Free coffee and snacks",
             ],
         },
-        {
+        {id: '3',
             title: "Mobile App Developer",
             category: "App Development",
             company: "TechNova Solutions",
             location: "Remote",
             salary: "Tk. 50,000-60,000 per month",
             type: "Contract, Full-time",
+            jobId: "125432",
             postedDaysAgo: 3,
-            applyDuration: "Apply before 25th Feb 2025",
+           applyDuration: "01-01-2025 ",
             skills: ["Flutter", "React Native", "Swift", "Kotlin", "Firebase", "REST APIs"],
             responsibilities: [
                 "Develop cross-platform mobile applications.",

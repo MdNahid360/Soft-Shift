@@ -212,7 +212,7 @@ const Contact = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div data-aos="zoom-in" className="flex  seaside opacity-[0.2] items-start justify-center md:text-[160px] text-4xl font-bold text-[gray] absolute top-0 bottom-0 left-0 right-0 m-auto md:pt-16 pt-0">
+                        <div data-aos="zoom-in" className="flex  seaside opacity-[0.2] items-start justify-center lg:text-[160px] md:text-[110px] text-4xl font-bold text-[gray] absolute top-0 bottom-0 left-0 right-0 m-auto md:pt-16 pt-0">
                             <h1 className="md:mt-4 mt-4">Contact Us</h1>
                         </div>
                     </div>
