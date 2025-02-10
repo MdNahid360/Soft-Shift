@@ -47,19 +47,20 @@ const HowWeWorks = () => {
                     {
                         steps.map((step, index) => <li
 
-                            key={step?.id} className="flex-start bg-[#0a091e] group relative flex lg:flex-col p-8 rounded-lg">
-                            <span className="absolute right-6 top-1 opacity-[0.1] text-[#62718ce2] text-8xl font-bold">{index + 1}</span>
-                            <div className="flex gap-4">
+                            key={step?.id} className="flex-start bg-[#0a091e] group relative block md:flex lg:flex-col p-8 rounded-lg">
+                            <div className="absolute right-6 top-1 opacity-[0.1] text-[#62718ce2] text-8xl font-bold">{index + 1}</div>
+
+                            <div className="md:flex gap-4">
                                 <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-300  transition-all duration-200 group-hover:border-gray-900 group-hover:bg-gray-900">
                                     {step?.icon}
                                 </div>
                                 <h3 className="text-xl font-bold text-light before:mb-2 before:block before:font-mono before:text-sm before:text-gray-500">
-                                    Add your databases
+                                    {step?.title}
                                 </h3>
                             </div>
-                            <div className="ml-6 lg:ml-0 lg:mt-10">
+                            <div className="md:ml-6 lg:ml-0 lg:mt-10">
                                 <h4 className="mt-2 text-base text-gray-500">
-                                    Use your own Notion databases or duplicate ours.
+                                    {step?.description}
                                 </h4>
                             </div>
                         </li>)
