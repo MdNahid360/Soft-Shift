@@ -7,7 +7,18 @@
     color: white!important;
 }
 
+.navbar :where(.css-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-arrow {
+    display: inline-flex!important;
+    color: white!important;
+    font-size: 34px!important;
+    transition: transform 0.3s;
+}
 
+.navbar :where(.css-cdzvx5).ant-collapse>.ant-collapse-item >.ant-collapse-header {
+    padding: 0px!important;
+    color: rgb(255 255 255 / 88%)!important;
+    font-size: 38px!important;
+}
 /********************************
  * dropdown
  ********************************/
