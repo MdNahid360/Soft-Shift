@@ -94,7 +94,7 @@ const Navbar = () => {
     // );
 
     const renderDropdownMenu = (menuItems) => (
-        <Menu className="!mt-3 !bg-[#292444] !min-w-[140px] !rounded-md !relative !p-2 !z-[10000]">
+        <Menu className="!mt-3 !bg-[#292444] !min-w-[140px] !rounded-md !p-2">
             {menuItems.map((item) => (
                 <Menu.Item key={item.name}>
                     <motion.div whileHover={{ x: 0 }}>

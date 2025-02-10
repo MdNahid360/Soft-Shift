@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ContainerWrapper from './ContainerWrapper';
 const Hero = () => {
     return (
@@ -21,9 +22,9 @@ const Hero = () => {
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil totam, quam ab commodi architecto non. Illum quo suscipit repellendus voluptas. Magnam nisi, natus ab consequatur blanditiis aspernatur ratione. Architecto, doloribus!
                             </p>
                             <br />
-                            <button className="animate__animated animate__bounceInUp shadow__btn rounded-lg px-6 h-[45px] w-[200px] text-lg duration-300">
-                                VIEW WORKS
-                            </button>
+                            <div className="animate__animated animate__bounceInUp shadow__btn rounded-md flex items-center overflow-hidden justify-center m-auto h-[45px] w-[200px] text-lg duration-300">
+                                <Link href={"/portfolio"} className='w-full h-full flex items-center justify-center'>VIEW WORKS</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
