@@ -1,12 +1,11 @@
 # Soft Shift
 ![Hotel Booking System](https://res.cloudinary.com/dp5cm54im/image/upload/v1739182652/Group_37_3_teyn13.png)
 
-
-#### Preview: [https://soft-shift.vercel.app/](https://soft-shift.vercel.app/)
-#### Code: [https://github.com/MdNahid360/Soft-Shift](https://github.com/MdNahid360/Soft-Shift)
-
 ## Overview
 Soft Shift is a fully dynamic software agency website built with Next.js and EmailJS. It features a modern design and essential sections such as Home, About, Portfolio, Services, Contact, and Career.
+
+
+#### Preview: [https://soft-shift.vercel.app/](https://soft-shift.vercel.app/)
 
 ## Technologies Used
 - **Next.js** - For server-side rendering and fast frontend performance
@@ -77,9 +76,6 @@ npm install -g vercel
 # Deploy the project
 vercel
 ```
-
-## Contributing
-If you'd like to contribute, please fork the repository and submit a pull request with your changes.
 
 ## License
 This project is licensed under the MIT License.
