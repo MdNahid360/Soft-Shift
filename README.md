@@ -11,6 +11,7 @@ Soft Shift is a fully dynamic software agency website built with Next.js and Ema
 - **Next.js** - For server-side rendering and fast frontend performance
 - **EmailJS** - For handling contact form submissions without a backend
 - **Tailwind CSS** - For styling and responsive design
+- **Ant Design** - For dynamic styling
 - **React** - For dynamic UI components
 
 ## Features
