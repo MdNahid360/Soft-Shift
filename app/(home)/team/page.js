@@ -9,7 +9,7 @@ import React from 'react';
 const TeamPage = () => {
    
     return (
-        <div className='team-bg relative'>
+        <div className='team-bg relative overflow-x-hidden'>
             <CommonHeader title="Meet Our Team Members" banner="/assets/team.jpg" />
 
             <figure className='py-12'>
