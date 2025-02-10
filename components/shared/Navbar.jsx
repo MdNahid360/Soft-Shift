@@ -146,7 +146,7 @@ const Navbar = () => {
                                         </motion.div>
                                     ) : (
                                         <Dropdown
-                                            overlay={renderDropdownMenu(item.menu)} trigger={["hover"]}
+                                            overlay={renderDropdownMenu(item.menu)} trigger={["click"]}
                                             className="custom-dropdown"
                                         >
                                             <motion.button
