@@ -350,3 +350,20 @@ background-size: 20px 20px;
   box-shadow: 18px -9px 235px 63px rgba(8, 136, 233, 0.375);
   animation: glowingShadowTeam 3s infinite ease-in-out;
 }
+
+/********************************
+ * team section in home
+ ********************************/
+ .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+    display: inline-block;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    background: #ffffff!important;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}
+
+ .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #8606ff!important;
+}

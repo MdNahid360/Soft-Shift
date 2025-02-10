@@ -1,4 +1,5 @@
 import Contact from "@/components/Contact";
+import OurTeamSection from "@/components/OurTeam";
 import OurPortfolio from "@/components/portfolio/OurPortfolio";
 import Services from "@/components/services/Services";
 import Hero from "@/components/shared/Hero";
@@ -12,7 +13,8 @@ export default function Home() {
       <Hero />
       <WhyChoseUs />
       <Services />
-      <OurPortfolio projects={projects}/>
+      <OurPortfolio projects={projects} />
+      <OurTeamSection />
       <Contact />
       <br /><br />
     </main>
