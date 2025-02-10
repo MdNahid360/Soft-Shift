@@ -16,6 +16,9 @@
     margin-top: 10px!important;
     z-index: 10000!important;
 }
+:where(.css-cdzvx5).ant-dropdown, :where(.css-cdzvx5).ant-dropdown-menu-submenu {
+    z-index: 10000!important;
+}
 
 /* :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown .ant-dropdown-menu, :where(.css-dev-only-do-not-override-cdzvx5).ant-dropdown-menu-submenu .ant-dropdown-menu {
     margin-top: 2px!important;
