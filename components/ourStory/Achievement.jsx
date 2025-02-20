@@ -4,6 +4,7 @@
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 const achievements = [
     { title: "33+ Years", description: "Influencing Digital Landscapes Together" },
