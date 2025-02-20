@@ -13,8 +13,6 @@ const PortfolioCard = ({
     return (
         <>
             <div
-                data-aos={"fade-up"}
-                data-aos-duration="1000"
                 className={`w-full group px-4 md:w-1/2 xl:w-1/3 ${showCard === "all" || showCard === category.toLowerCase()
                     ? "block"
                     : "hidden"

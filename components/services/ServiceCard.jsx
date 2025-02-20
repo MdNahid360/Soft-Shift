@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const ServiceCard = ({ itm }) => {
     return (
-        <div data-aos="zoom-in" className="bg-gradient-to-r from-[#161625f4] to-[#23233449] backdrop-blur-sm p-6 rounded-xl">
+        <div className="bg-gradient-to-r from-[#161625f4] to-[#23233449] backdrop-blur-sm p-6 rounded-xl">
             <h1 className="text-2xl font-bold">{itm?.name}</h1>
             <Image
-                src="/assets/pic3.jpg "
+                src={itm?.icon}
                 className="mt-4 w-20 h-20 object-cover rounded-lg border border-primary p-1"
                 alt="icon"
                 width={200}

@@ -28,7 +28,7 @@ const BlogPage = () => {
 
                     <div className="mt-12 grid md:grid-cols-3 md:gap-8 gap-2">
                         {
-                            blogs?.map(itm => <BlogCard key={itm.id} blog={itm} />)
+                            blogs?.map(itm => <BlogCard key={itm?.id} blog={itm} />)
                        }
                     </div>
                 </ContainerWrapper>

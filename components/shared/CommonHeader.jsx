@@ -38,8 +38,8 @@ const CommonHeader = ({ title, banner, heighLarge, heightSmall, pathTrack }) => 
                                         Home
                                     </Link>
                                 </Breadcrumb.Item>
-                                {breadcrumbs.map((breadcrumb, index) => (
-                                    <Breadcrumb.Item key={index}>
+                                {breadcrumbs.map((breadcrumb) => (
+                                    <Breadcrumb.Item key={breadcrumb?.path}>
                                         {breadcrumb.path ? (
                                             <Link href={breadcrumb.path} className="md:text-xl text-lg !text-blue-500 hover:text-blue-600">
                                                 {breadcrumb.breadcrumbName}

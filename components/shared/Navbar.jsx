@@ -71,28 +71,6 @@ const Navbar = () => {
         },
 
     ];
-
-    // const renderDropdownMenu = (menuItems) => (
-    //     <Menu className="!mt-3 !p-2">
-    //         {menuItems.map((item) => (
-    //             <Menu.Item
-    //                 key={item.name}>
-    //                 <motion.div
-    //                     whileHover={{ x: 0 }}>
-    //                     <Link
-    //                         href={item.href}
-    //                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-    //                         className={`text-light transition duration-300 ${pathname === item.href ? "text-primary" : ""}`}
-    //                     >
-    //                         {item.name}
-    //                     </Link>
-
-    //                 </motion.div>
-    //             </Menu.Item>
-    //         ))}
-    //     </Menu>
-    // );
-
     const renderDropdownMenu = (menuItems) => (
         <Menu className="!mt-3 !bg-[#292444] !min-w-[140px] !rounded-md !p-2">
             {menuItems.map((item) => (

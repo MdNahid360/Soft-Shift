@@ -5,7 +5,7 @@ const JobList = ({ index, job }) => {
 
   return (
     <div className="">
-      <div data-aos="fade-up" className='lg:flex relative hidden items-center justify-between min-h-[50px] py-2 md:min-h-[70px] gap-2 px-4 border border-primary text-sm rounded-lg duration-300 bg-[#1b1f33] hover:bg-[#131624]'>
+      <div className='lg:flex relative hidden items-center justify-between min-h-[50px] py-2 md:min-h-[70px] gap-2 px-4 border border-primary text-sm rounded-lg duration-300 bg-[#1b1f33] hover:bg-[#131624]'>
         <h1 className="text-md  w-[220px] font-bold">{job?.title}</h1>
 
         <div className=" w-[220px] flex items-center gap-2">
