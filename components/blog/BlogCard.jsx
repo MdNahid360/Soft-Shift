@@ -6,7 +6,6 @@ const BlogCard = async ({ blog }) => {
     const { base64 } = await getBluerDate(blog?.thumbnail);
     return (
         <div
-            data-aos='fade-up'
             className=" group duration-300 rounded-lg overflow-hidden border-primary">
             <header className="overflow-hidden relative">
                 <Image

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const ProjectPage = ({ params: { id } }) => {
 
-    const findProject = projects.find((project) => project.id === parseInt(id));
+    const findProject = projects?.find((project) => project.id === parseInt(id));
 
     const getDuration = (startDate, endDate) => {
         const start = new Date(startDate);
@@ -36,7 +36,7 @@ const ProjectPage = ({ params: { id } }) => {
         return `${day} ${month} ${year}`;
     }
 
-    console.log(findProject);
+    // console.log(findProject);
     return (
         <div className="text-white">
             <header
@@ -95,8 +95,8 @@ const ProjectPage = ({ params: { id } }) => {
 
                                         <ul className="mt-2 flex gap-2 flex-wrap">
                                             {
-                                                findProject?.technology.map((item, index) => (
-                                                    <li key={index} className="bg-[#80808046] px-2 py-1 rounded text-sm">{item}</li>
+                                                findProject?.technology.map((item) => (
+                                                    <li key={item} className="bg-[#80808046] px-2 py-1 rounded text-sm">{item}</li>
                                                 ))
                                            }
                                         </ul>

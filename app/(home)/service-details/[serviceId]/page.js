@@ -45,9 +45,8 @@ const ServiceDetailsPage = ({ params: { serviceId } }) => {
                             
                             <ul className="mt-4 px-3 list-disc grid md:grid-cols-2 md:gap-4 gap-2">
                                 {
-                                    findService?.services?.map((itm, idx) => <li
+                                    findService?.services?.map((itm) => <li
                                         key={itm}
-                                        data-aos="fade-up"
                                     >{itm}</li>)
                                 }
                             </ul>
@@ -64,13 +63,12 @@ const ServiceDetailsPage = ({ params: { serviceId } }) => {
                         </div>
                     </div>
                     <br />
-                                <HowWeWorks />
+                                <HowWeWorks data={findService?.howWeWork} />
                     <br />
                     {/* user question and answer */}
                     <div className="grid md:grid-cols-2 lg:gap-8 gap-3 md:mt-14">
                        <div  className=" rounded-xl overflow-hidden md:mt-0 mt-14">
                             <Image
-                                 data-aos="fade-right"
                                 src={findService?.qan?.cover_img || findService?.qan?.cover_img === '' ? '/assets/pic3.jpg' : findService?.qan?.cover_img}
                                 className="w-full h-full object-cover"
                                 alt="icon"
@@ -78,8 +76,8 @@ const ServiceDetailsPage = ({ params: { serviceId } }) => {
                                 height={500}
                             />
                         </div>
-                        <div  data-aos="fade-left" className="">
-                            <ServiceQan />
+                        <div className="">
+                            <ServiceQan questions={findService?.qan?.question} />
                         </div>
                     </div>
                 </ContainerWrapper>

@@ -14,6 +14,14 @@ const nextConfig = {
        {
         protocol: 'https',
         hostname: 'randomuser.me'
+       },
+       {
+        protocol: 'https',
+        hostname: 'xsgames.co'
+       },
+       {
+        protocol: 'https',
+        hostname: 'img.freepik.com'
       },
     ],
   },

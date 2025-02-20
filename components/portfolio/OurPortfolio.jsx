@@ -36,7 +36,7 @@ const OurPortfolio = ({ title, subtitle, allProject = false, description, projec
                                     {subtitle ?? "Our Portfolio"}
                                 </span>
                                 <Title position="center" move="fade-up" text={title ?? "Our Recent Projects"} shadow={true} />
-                                <p data-aos="fade-up" className="mt-3 text-body-color md:w-[650px] m-auto text-base dark:text-dark-6">
+                                <p className="mt-3 text-body-color md:w-[650px] m-auto text-base dark:text-dark-6">
                                     {description ?? "Explore our latest projects showcasing innovation and expertise."}
                                 </p>
                                 <br /><br />
@@ -46,9 +46,9 @@ const OurPortfolio = ({ title, subtitle, allProject = false, description, projec
 
                     <figure className="w-full flex flex-wrap justify-center">
                         <div className="w-full mb-12">
-                            <ul data-aos="zoom-in" className="flex flex-wrap justify-center mb-8 space-x-1">
+                            <ul className="flex flex-wrap justify-center mb-8 space-x-1">
                                 {projectCategories.map((category) => (
-                                    <li data-aos="fade-up" key={category} className="mb-1">
+                                    <li key={category} className="mb-1">
                                         <button
                                             onClick={() => handleProject(category)}
                                             className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${showCard === category

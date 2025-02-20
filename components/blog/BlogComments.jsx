@@ -20,7 +20,7 @@ const BlogComments = ({ findBlog, id }) => {
                             />
                         </li>
                     </div>
-                    : findBlog?.comments?.map(comment => <li key={comment.id} className="mb-4">
+                    : findBlog?.comments?.map(comment => <li key={comment?.id} className="mb-4">
                         <header className="flex items-center gap-2">
                             <Image
                                 className="w-10 h-10 object-cover rounded-full"

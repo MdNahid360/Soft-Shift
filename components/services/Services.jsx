@@ -10,7 +10,6 @@ const Services = () => {
             <ContainerWrapper>
                 <div >
                     <span
-                        data-aos={"fade-up"}
                         className="px-3 bg-primary w-[140px] text-center flex items-center mb-3 justify-center m-auto text-light py-1 rounded-full">
                         Our Services
                     </span>

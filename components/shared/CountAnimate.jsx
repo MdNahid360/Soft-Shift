@@ -1,4 +1,4 @@
-
+'use client'
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "motion/react";
 import { useInView } from "react-intersection-observer";
