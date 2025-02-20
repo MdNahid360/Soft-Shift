@@ -200,7 +200,7 @@ const Navbar = () => {
                         initial={{ scale: 0.5, opacity: 0, rotate: 0 }}
                         animate={{
                             scale: isMobileMenuOpen ? 1 : 0.5,
-                            opacity: isMobileMenuOpen ? 0.2 : 0,
+                            opacity: isMobileMenuOpen ? 124.2 : 0,
                             rotate: isMobileMenuOpen ? 90 : 0
                         }}
                         transition={{ duration: 0.5, ease: "easeOut" }}

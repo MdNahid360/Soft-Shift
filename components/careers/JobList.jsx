@@ -23,7 +23,7 @@ const JobList = ({ index, job }) => {
           <span>{job?.applyDuration}</span>
         </div>
         <div className="flex items-center gap-2">
-          <Link href={`/career/${job?.id}`} className="btn btn-primary hover:bg-dark_primary duration-300 bg-light_primary px-4 py-1 rounded-full">Apply</Link>
+          <Link href={`#`} className="btn btn-primary hover:bg-dark_primary duration-300 bg-light_primary px-4 py-1 rounded-full">Apply</Link>
           <Link href={`/careers/${job?.id}`} className="btn btn-primary hover:bg-gray-800 duration-300 bg-gray-700 px-4 py-1 rounded-full">Learn More</Link>
         </div>
       </div>
@@ -50,8 +50,8 @@ const JobList = ({ index, job }) => {
         <br />
 
         <div className="flex items-center gap-2">
-          <Link href={`/career/${job?.id}`} className="btn btn-dark_primary hover:bg-primary duration-300 bg-light_primary px-4 py-2 rounded">Apply</Link>
-          <Link href={`/careers/${job?.title}`} className="btn  hover:bg-gray-800 duration-300 bg-gray-700 px-4 py-2 rounded">Learn More</Link>
+          <Link href={`#`} className="btn btn-dark_primary hover:bg-primary duration-300 bg-light_primary px-4 py-2 rounded">Apply</Link>
+          <Link href={`/careers/${job?.id}`} className="btn  hover:bg-gray-800 duration-300 bg-gray-700 px-4 py-2 rounded">Learn More</Link>
         </div>
         <div className="absolute right-8 opacity-[0.1] text-[#1a61caa7] top-4 text-[130px] font-bold">{index + 1}</div>
       </div>
